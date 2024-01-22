@@ -110,7 +110,7 @@ h3, h2{
 
 
 
-
+/* 
 .web_header, .web_footer{
 	color: #2196F3;
 	font-size: 26px;
@@ -129,6 +129,7 @@ ul li a[href^="mailto"],a[href^="tel"] {
 
 /* --------------- */
 /* MAIN */
+/*
 .title_wrapper{
 	color: #ffffff;
 	margin: 200px 0px 0px 0px;
@@ -153,7 +154,7 @@ ul li a[href^="mailto"],a[href^="tel"] {
 /* --------------- */
 /* FOOTER */
 
-
+/*
 
 a {
 	text-decoration: none;
