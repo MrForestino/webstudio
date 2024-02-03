@@ -17,40 +17,87 @@
 --color-background-section-first:#2F303A;
 --color-background-section-fourth:#F5F4FA;
 --color-text-p:#212121;
+--font-family-logo:'Raleway', sans-serif;
+--font-family-other-text:'Roboto', sans-serif;
 }
+
 .logo-web{
+	font-family: var(--font-family-logo);
+	font-weight: 700;
+	font-size: 26px;
 	color: var(--color-logo-web);
+
 }
 .logo-studio{
+	font-family: var(--font-family-logo);
+	font-weight: 700;
+	font-size: 26px;
 	color: var(--color-logo-studio);
 }
 .menu-nav{
+	font-family:var(--font-family-other-text);
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
 	color: var(--color-menu-nav);
 }
 .address-email{
+	font-family:var(--font-family-other-text);
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
 	color: var(--color-adresses);
 }
 .address-tel{
+	font-family:var(--font-family-other-text);
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
 	color: var(--color-adresses);
 }
 .address-street{
 	color: var(--color-white);
 }
 .section_first{
+	font-family: var(--font-family-other-text);
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 136%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
 	background: var(--color-background-section-first);
 	color: var(--color-white);
 }
 .btn_01{
+	font-family: var(--font-family-other-text);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 187%;
+	letter-spacing: 0.06em;
+	text-align: center;
+	width: 216px;
+	height: 50px;
 	background: var(--color-logo-web);
 	color: var(--color-white);
 }
 h3, h2{
+	font-family: var(--font-family-other-text);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 	color: var(--color-text-p);
 }
 h3 + p{
 	color: var(--color-adresses);
 }
 p{
+	font-family: var(--font-family-other-text);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 171%;
+	letter-spacing: 0.03em;
 	color: var(--color-adresses);
 }
 .section_fourth{
@@ -60,8 +107,12 @@ footer{
 	background: var(--color-background-section-first);
 }
 .studio_white{
+	font-family: var(--font-family-logo);
+	font-weight: 700;
+	font-size: 26px;
 	color: var(--color-white);
 }
+
 /* a[href^="/"]{
 	text-decoration: none;
 	color: #212121;
