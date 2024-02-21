@@ -1,4 +1,4 @@
-*{
+/**{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -19,6 +19,7 @@
 	margin:0;
 	padding: 0;
 } */
+
 :root{
 --color-logo-web:#2196F3 ;
 --color-logo-studio:#000000;
