@@ -113,7 +113,7 @@ a{
 	background-color: var(--color-active);
 
 }
-.main-section-second{
+.main-section-keyaspects{
 	padding-top: 94px;
 }
 .section-div-ul-h3{
@@ -163,7 +163,7 @@ p{
 	justify-content: center;
 	
 }
-.main-section-fourth{
+.main-section-team{
 
 	background: var(--color-background-section-fourth);
 }
@@ -185,4 +185,36 @@ address{
 /* a[href^="/"]{
 	text-decoration: none;
 	color: #212121;
+}
+/* ----------------- ----------------- ----------------*/
+
+
+/*---- PORTFOLIO-STYLES ---- */
+.ul-portfoliio{
+	display: flex;
+	justify-content: center;
+
+}
+.ul-list-button{
+	font-family: var(--font-family-other-text);
+	font-size: 16px;
+	width: 73px;
+	height: 38px;
+	background-color: #188CE8;
+	color: #ffffff;
+	border-radius: 4px;
+	margin:8px;
+}
+.ul-list-button-website, .ul-list-button-marketing{
+	font-family: var(--font-family-other-text);
+	font-size: 16px;
+	width: 125px;
+	height: 38px;
+	background-color: #188CE8;
+	color: #ffffff;
+	border-radius: 4px;
+	margin:8px;
+}
+.ul-list-portfoliio{
+	display: inline;
 }
