@@ -10,7 +10,7 @@
 --color-adresses:#757575;
 --color-white:#ffffff;
 --color-background-section-first:#2F303A;
---color-background-section-fourth:#F5F4FA;
+--color-background-section-team:#F5F4FA;
 --color-text-p:#212121;
 --color-active:#188CE8;
 --font-family-logo:'Raleway', sans-serif;
@@ -22,6 +22,7 @@ body{
 	font-weight: 400;
 	letter-spacing: 0.02em;
 }
+
 li{
 	list-style: none;
 }
@@ -53,6 +54,7 @@ a{
 }
 .nav-list-link{
 	color: var(--color-menu-nav);
+	padding:0px 50px 0px;
 }
 .ul-list-link-address-email:hover,
 .ul-list-link-address-tel:hover{
@@ -61,12 +63,15 @@ a{
 }
 .nav-link-list{
 	display: inline;
+	padding-left: 93px;
+	/* padding-right: 344px ; */
 	/* display:flex; */
 	/* flex-direction: row;
 	justify-content: center; */
 }
 .nav-link-list-contacts{
 	display: inline;
+	padding-left: 10px;
 }
 .active-link{
 	color: var(--color-logo-web);
@@ -80,7 +85,10 @@ a{
 }
 .ul-list-link-address-email, .ul-list-link-address-tel{
 	color: var(--color-adresses);
+	padding:0px 50px 0px;
+
 }
+
 .address-street{
 	color: var(--color-white);
 }
@@ -132,6 +140,9 @@ h3, h2{
 	color: var(--color-text-p);
 	text-align: center;
 }
+.key-aspects{
+	padding-bottom: 50px;
+}
 p{
 	font-weight: 400;
 	line-height: 1.5;
@@ -165,7 +176,7 @@ p{
 }
 .main-section-team{
 
-	background: var(--color-background-section-fourth);
+	background: var(--color-background-section-team);
 }
 footer{
 	background: var(--color-background-section-first);
@@ -190,6 +201,12 @@ address{
 
 
 /*---- PORTFOLIO-STYLES ---- */
+h1{
+	font-family: var(--font-family-logo);
+	color:var();
+	margin: 50px;
+	text-align: center;
+}
 .ul-portfoliio{
 	display: flex;
 	justify-content: center;
@@ -200,21 +217,31 @@ address{
 	font-size: 16px;
 	width: 73px;
 	height: 38px;
-	background-color: #188CE8;
-	color: #ffffff;
+	background-color: var(--color-background-section-team);
+	color: var(--color-logo-studio);
 	border-radius: 4px;
 	margin:8px;
+
+	/* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
 }
-.ul-list-button-website, .ul-list-button-marketing{
+.ul-list-button-all, .ul-list-button-website, .ul-list-button-appendices, .ul-list-button-design, .ul-list-button-marketing{
 	font-family: var(--font-family-other-text);
 	font-size: 16px;
 	width: 125px;
 	height: 38px;
-	background-color: #188CE8;
-	color: #ffffff;
+	background-color: var();
+	color: var(--color-logo-studio);
 	border-radius: 4px;
 	margin:8px;
+	margin-bottom: 50px;
 }
-.ul-list-portfoliio{
-	display: inline;
+.ul-list-button-all:hover, .ul-list-button-website:hover, .ul-list-button-appendices:hover, .ul-list-button-design:hover, .ul-list-button-marketing:hover{
+	font-family: var(--font-family-other-text);
+	font-size: 16px;
+	width: 125px;
+	height: 38px;
+	background-color:  var(--color-active);
+	color: var(--color-white);
+	border-radius: 4px;
+	margin:8px;
 }
