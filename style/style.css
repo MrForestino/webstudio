@@ -104,7 +104,13 @@ a{
 	padding: 200px 0 200px;
 }
 .hero-title{
-	line-height: 2;
+	font-family: var(--font-family-other-text);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 136%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
 }
 .hero-button{
 	font-weight: 700;
@@ -132,7 +138,7 @@ a{
 	justify-content: center;
 	flex-direction: row;
 }
-h3, h2{
+.key-aspects-info-title,.key-aspects-title,.key-aspects{
 	font-weight: 700;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
@@ -141,9 +147,10 @@ h3, h2{
 	text-align: center;
 }
 .key-aspects{
+	padding-top: 94px;
 	padding-bottom: 50px;
 }
-p{
+.description{
 	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
@@ -155,13 +162,13 @@ p{
 	padding-bottom: 50px;
 	text-align: center;
 }
-.section-div-ul-list{
+.whatwedo-section{
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
 	padding-bottom: 94px;
 }
-.section-div-ul-list-photo{
+.whatwedo-photo{
 	padding: 30px;
 }
 .section-div-ul-list-photopersons{
