@@ -150,10 +150,12 @@
 		color: var(--color-adresses);
 		text-align: center;
 	}
-	.whatwedo-title{
+	.whatwedo-section{
 		padding-top: 94px;
+	}
+	.whatwedo-title{
 		padding-bottom: 50px;
-		text-align: center;
+
 	}
 	.whatwedo-list{
 		display: flex;
@@ -175,20 +177,18 @@
 		
 	}
 	.team-section{
-	
 		background: var(--color-background-section-team);
+		padding-top:94px;
 	}
 	.footer{
 		background: var(--color-background-section-first);
+		padding: 60px 0;
 	}
 	.footer-logo-srudio{
 		font-family: var(--font-family-logo);
 		font-weight: 700;
 		font-size: 26px;
 		color: var(--color-white);
-	}
-	.footer-container{
-		padding: 60px 0;
 	}
 	.address{
 		padding-top: 20px;
