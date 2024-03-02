@@ -152,6 +152,7 @@
 	}
 	.whatwedo-section{
 		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 	.whatwedo-title{
 		padding-bottom: 50px;
@@ -161,14 +162,13 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		padding-bottom: 94px;
 	}
 	.whatwedo-item{
-		padding: 30px;
+		padding: 0px 30px;
 	}
 	.team-item{
-		padding: 30px;
-		padding-bottom: 94px;
+		padding: 0px 30px;
+
 	}
 	.team-list{
 		display: flex;
@@ -179,6 +179,7 @@
 	.team-section{
 		background: var(--color-background-section-team);
 		padding-top:94px;
+		padding-bottom: 94px;
 	}
 	.footer{
 		background: var(--color-background-section-first);
