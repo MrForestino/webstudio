@@ -20,6 +20,16 @@
 	.header{
 		padding-top: 24px;
 		padding-bottom: 25px;
+
+	}
+	.container-header{
+		display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+		border: 1px dotted tomato
 	}
 	.container{
 		width: 1200px;
@@ -50,7 +60,7 @@
 		/* text-decoration: underline; */
 	}
 	.nav-link-list{
-		display: inline;
+		display: flex;
 		padding-left: 93px;
 		/* padding-right: 344px ; */
 		/* display:flex; */
@@ -58,17 +68,19 @@
 		justify-content: center; */
 	}
 	.nav-link-list-contacts{
-		display: inline;
+		display: flex;
 		padding-left: 10px;
 	}
 	.active-link{
 		color: var(--color-logo-web);
 	}
 	.nav{
-		display: inline;
+		display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 	}
 	.ul-link{
-		display: inline;
+		display: flex;
 		/* padding: 50px; */
 	}
 	.header-address-email, .header-address-tel{
