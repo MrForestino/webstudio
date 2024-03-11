@@ -22,14 +22,10 @@
 		padding-bottom: 25px;
 
 	}
-	.container-header{
+	.flex-header{
 		display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-		width: 1200px;
-		margin: 0 auto;
-		padding: 0 15px;
-		border: 1px dotted tomato
+		justify-content: space-between;
+		align-items: center;
 	}
 	.container{
 		width: 1200px;
@@ -52,7 +48,6 @@
 	}
 	.nav-list-link{
 		color: var(--color-menu-nav);
-		padding:0px 50px 0px;
 	}
 	.header-address-email:hover,
 	.header-address-tel:hover{
@@ -61,7 +56,7 @@
 	}
 	.nav-link-list{
 		display: flex;
-		padding-left: 93px;
+		margin-left: 93px;
 		/* padding-right: 344px ; */
 		/* display:flex; */
 		/* flex-direction: row;
@@ -69,7 +64,6 @@
 	}
 	.nav-link-list-contacts{
 		display: flex;
-		padding-left: 10px;
 	}
 	.active-link{
 		color: var(--color-logo-web);
@@ -81,14 +75,15 @@
 	}
 	.ul-link{
 		display: flex;
-		/* padding: 50px; */
+		padding-left:50px;
 	}
 	.header-address-email, .header-address-tel{
 		color: var(--color-adresses);
-		padding:0px 50px 0px;
 	
 	}
-	
+	.ul-link-contacts:first-child{
+		padding-right: 50px;
+	}
 	.address-item{
 		color: var(--color-white);
 	}
@@ -140,7 +135,6 @@
 	.keyaspects-list{
 		display: flex;
 	}
-	.keyaspects-h3-title, 
 	.team-position, 
 	.whatwedo-title, 
 	.keyaspects-title,
@@ -151,15 +145,24 @@
 		text-transform: uppercase;
 		color: var(--color-text-p);
 		text-align: center;
+
+	}
+	.team-position{
+		padding-top:10px;
 	}
 	.keyaspects-title{
 		padding-bottom: 50px;
 	}
 	.keyaspects-text,.team-text/*,.portfolio-text*/{
+		
 		font-weight: 400;
 		line-height: 1.5;
 		letter-spacing: 0.03em;
 		color: var(--color-adresses);
+
+	}
+	.team-text{
+		padding-top:30px;
 		text-align: center;
 	}
 	.whatwedo-section{
@@ -175,12 +178,17 @@
 		justify-content: center;
 		flex-direction: row;
 	}
-	.whatwedo-item{
-		padding: 0px 30px;
+	.whatwedo-item:nth-child(1){
+		padding-right:30px;
+	}
+	.whatwedo-item:nth-child(2){
+		padding-right:30px;
+	}
+	.team-title{
+		padding:94px 0 50px 0;
 	}
 	.team-item{
-		padding: 0px 30px;
-
+		padding-right:30px;
 	}
 	.team-list{
 		display: flex;
