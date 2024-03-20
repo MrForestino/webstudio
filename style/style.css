@@ -1,3 +1,7 @@
+*, *::before, *::after{
+	box-sizing: inherit;
+	box-sizing: border-box;
+}
 :root{
 	--color-logo-web:#2196F3 ;
 	--color-logo-studio:#000000;
@@ -57,6 +61,7 @@
 	.nav-link-list{
 		display: flex;
 		margin-left: 93px;
+		margin-right: 344px;
 		/* padding-right: 344px ; */
 		/* display:flex; */
 		/* flex-direction: row;
@@ -72,17 +77,18 @@
 		display: flex;
     justify-content: space-between; 
     align-items: center; 
+		
 	}
-	.ul-link{
+	.ul-link:not(:last-child){
 		display: flex;
-		padding-left:50px;
+		margin-right:50px;
 	}
 	.header-address-email, .header-address-tel{
 		color: var(--color-adresses);
 	
 	}
 	.ul-link-contacts:first-child{
-		padding-right: 50px;
+		margin-right: 50px;
 	}
 	.address-item{
 		color: var(--color-white);
@@ -107,7 +113,7 @@
 		text-transform: uppercase;
 		text-align: center;
 		color: var(--color-background-section-team);
-		padding: 0px 0px 30px;
+		margin: 0px 0px 30px;
 	}
 	.hero-button{
 		font-weight: 700;
@@ -127,13 +133,22 @@
 	
 	}
 	.keyaspects-section{
-		padding-top: 94px;
+		margin-top: 94px;
 	}
 	.keyaspects-h3-title{
-		padding-bottom: 10px;
+		margin-bottom: 10px;
 	}
 	.keyaspects-list{
 		display: flex;
+		/* justify-content: space-between; */
+	}
+	.keyaspects-items{
+		/* width: 270px; */
+		flex-basis: 270px;
+	}
+	.keyaspects-items:not(:last-child){
+		/* width: 270px; */
+		margin-right: 30px;
 	}
 	.team-position, 
 	.whatwedo-title, 
@@ -148,10 +163,12 @@
 
 	}
 	.team-position{
-		padding-top:10px;
+		margin-top:10px;
+		margin-bottom:30px;
 	}
 	.keyaspects-title{
-		padding-bottom: 50px;
+		margin-bottom: 50px;
+		display: none;
 	}
 	.keyaspects-text,.team-text/*,.portfolio-text*/{
 		
@@ -162,7 +179,7 @@
 
 	}
 	.team-text{
-		padding-top:30px;
+		margin-top:30px;
 		text-align: center;
 	}
 	.whatwedo-section{
@@ -170,7 +187,7 @@
 		padding-bottom: 94px;
 	}
 	.whatwedo-title{
-		padding-bottom: 50px;
+		margin-bottom: 50px;
 
 	}
 	.whatwedo-list{
@@ -179,16 +196,18 @@
 		flex-direction: row;
 	}
 	.whatwedo-item:nth-child(1){
-		padding-right:30px;
+		margin-right:30px;
 	}
 	.whatwedo-item:nth-child(2){
-		padding-right:30px;
+		margin-right:30px;
 	}
 	.team-title{
-		padding:94px 0 50px 0;
+		margin:94px 0 50px 0;
 	}
 	.team-item{
-		padding-right:30px;
+		background-color: var(--color-white);
+		margin-right:30px;
+		border-radius: 9px;
 	}
 	.team-list{
 		display: flex;
@@ -198,21 +217,25 @@
 	}
 	.team-section{
 		background: var(--color-background-section-team);
-		padding-top:94px;
-		padding-bottom: 94px;
+padding-top:94px;
+padding-bottom: 94px;
 	}
 	.footer{
 		background: var(--color-background-section-first);
 		padding: 60px 0;
 	}
-	.footer-logo-srudio{
+	.footer-logo-studio{
 		font-family: var(--font-family-logo);
 		font-weight: 700;
 		font-size: 26px;
 		color: var(--color-white);
+		margin-bottom: 16px;
 	}
 	.address{
-		padding-top: 20px;
+		margin-top: 20px;
+	}
+	.address-item{
+		margin-top: 9px;
 	}
 	.item-address-email, .item-address-tel{
 		color: var(--color-adresses);
