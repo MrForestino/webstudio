@@ -147,6 +147,7 @@
 		margin-top: 94px;
 	}
 	.keyaspects-h3-title{
+		/* margin-top: 150px; */
 		margin-bottom: 10px;
 	}
 	.keyaspects-list{
@@ -154,8 +155,31 @@
 		/* justify-content: space-between; */
 	}
 	.keyaspects-items{
-		/* width: 270px; */
 		flex-basis: 270px;
+	}
+	.keyaspects-items::before{
+		content: '';
+		display:block;
+		width:270px;
+		height: 120px;
+		margin-bottom: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 4px;
+		background-color: var(--color-background-section-team);
+		/* padding: 50px 100px; */
+	}
+	.keyaspects-items:nth-child(1):before{
+		background-image: url(/images/antenna.png);
+	}
+	.keyaspects-items:nth-child(2):before{
+		background-image: url(/images/clock.png);
+	}
+	.keyaspects-items:nth-child(3):before{
+		background-image: url(/images/diagram.png);
+	}
+	.keyaspects-items:nth-child(4):before{
+		background-image: url(/images/astronaut.png);
 	}
 	.keyaspects-items:not(:last-child){
 		/* width: 270px; */
