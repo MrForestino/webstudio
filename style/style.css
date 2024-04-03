@@ -294,7 +294,12 @@ padding-bottom: 94px;
 		margin-bottom: 32px;
 		text-align: center;
 	}
-	.portfolio-button{
+
+	.portfoliio-button{
+		display: flex;
+		justify-content: center;
+	}
+	.portfoliio-list{
 		display: flex;
 		justify-content: center;
 		padding-bottom: 16px;
@@ -352,6 +357,7 @@ padding-bottom: 94px;
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
+		flex-basis:calc((100%- 90px)/3);
 	}
 	.project-title{
 		font-family: var(--font-family-roboto);
@@ -384,4 +390,7 @@ padding-bottom: 94px;
 	}
 	.project-item{
 		width: 370px;
+	}
+	.display-title{
+		display: none;
 	}
