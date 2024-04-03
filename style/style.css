@@ -160,7 +160,6 @@
 	.keyaspects-items::before{
 		content: '';
 		display:block;
-		width:270px;
 		height: 120px;
 		margin-bottom: 30px;
 		background-repeat: no-repeat;
@@ -204,7 +203,7 @@
 		margin-bottom: 50px;
 		display: none;
 	}
-	.keyaspects-text,.team-text/*,.portfolio-text*/{
+	.keyaspects-text,.team-text/*,.project-text*/{
 		
 		font-weight: 400;
 		line-height: 1.5;
@@ -295,10 +294,11 @@ padding-bottom: 94px;
 		margin-bottom: 32px;
 		text-align: center;
 	}
-	.portfoliio-list{
+	.portfolio-button{
 		display: flex;
 		justify-content: center;
-	
+		padding-bottom: 16px;
+		margin-bottom: 38px;
 	}
 	.portfolio-item{
 		font-family: var(--font-family-roboto);
@@ -322,10 +322,14 @@ padding-bottom: 94px;
 		color: var(--color-logo-studio);
 		background-color: var(--color-background-section-team);
 		border-radius: 4px;
-		margin:8px;
-		margin-bottom: 50px;
 		border: none;
 		padding: 6px 25px;
+	}
+	.button-all, .button-website, .button-appendices, .button-design{
+		margin-right:8px;
+	}
+	.display{
+		display:none;
 	}
 	.button-all:active, .button-website:active, .button-appendices:active, .button-design:active, .button-marketing:active{
 		color: var(--color-white);
@@ -343,13 +347,13 @@ padding-bottom: 94px;
 		margin:8px;
 		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);;
 	} */
-	.portfolio-image-list{
+	.portfolio-project{
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
 	}
-	.portfolio-h2-title{
+	.project-title{
 		font-family: var(--font-family-roboto);
 		font-weight: 700;
 		font-size: 18px;
@@ -358,7 +362,7 @@ padding-bottom: 94px;
 		color: var(--color-text-p);
 		margin-bottom: 4px;
 	}
-	.portfolio-text{
+	.project-text{
 		font-family: var(--font-family-roboto);
 		font-weight: 400;
 		font-size: 16px;
@@ -366,11 +370,7 @@ padding-bottom: 94px;
 		letter-spacing: 0.03em;
 		color: var(--color-adresses);
 	}
-	.portfolio-text, .portfolio-h2-title{
-		width: 322px;
-		margin-left: 24px;
-	}
-	.card-text{
+	.project-box{
 		padding: 20px 24px;
 		border-right-width: 1px;
 		border-right-style: solid;
@@ -382,6 +382,6 @@ padding-bottom: 94px;
 		border-bottom-style: solid;
 		border-bottom-color:var(--color-portfolio-cards);
 	}
-	.portfolio-item-photo{
+	.project-item{
 		width: 370px;
 	}
