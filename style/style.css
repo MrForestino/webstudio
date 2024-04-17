@@ -20,8 +20,18 @@
 		font-size: 14px;
 		font-weight: 500;
 		letter-spacing: 0.02em;
+	}	
+	.main-container{
+		width: 1600px;
+		margin: 0 auto;
+		outline: 1px dotted deepskyblue;
 	}
-	
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+		outline: 1px dotted tomato;
+	}
 	.header{
 		padding-top: 24px;
 		padding-bottom: 25px;
@@ -34,12 +44,7 @@
 		display: flex;
 		align-items: center;
 	}
-	.container{
-		width: 1200px;
-		margin: 0 auto;
-		padding: 0 15px;
-		outline: 1px dotted tomato
-	}
+
 	.logo-web{
 		font-family: var(--font-family-logo);
 		font-weight: 700;
