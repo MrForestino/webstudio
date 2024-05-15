@@ -76,6 +76,7 @@
 	}
 	.nav-link-list-contacts{
 		display: flex;
+		align-items: center;
 	}
 	.active-link{
 		color: var(--color-logo-web);
@@ -92,10 +93,18 @@
 	}
 	.header-address-email, .header-address-tel{
 		color: var(--color-adresses);
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	
 	}
 	.ul-link-contacts:first-child{
 		margin-right: 50px;
+		
+	}
+	.ul-link-contacts:hover .header-address-email{
+		color: var(--color-active);
+		fill: var(--color-logo-web);
 	}
 	.address-item{
 		color: var(--color-white);
