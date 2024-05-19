@@ -313,23 +313,17 @@
 		display: flex;
 		gap: 30px;
 	}
-	.regular-customers-item{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: 1px solid var(--color-svg);
-		border-radius: 4px;
-		width: 170px;
-		height: 92px;
-	}
 	.regular-customers-link{
 		fill: var(--color-adresses);
+		border: 1px solid var(--color-svg);
+		padding: 16px 32px;
+		border-radius: 4px;
 	}
 	.regular-customers-link:hover{
 		fill: var(--color-active);
-	}
-	.regular-customers-item:hover{
 		border: 1px solid var(--color-active);
+		padding: 16px 32px;
+		border-radius: 4px;
 	}
 	.footer{
 		background: var(--color-background-section-first);
