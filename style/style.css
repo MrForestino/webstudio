@@ -291,6 +291,8 @@
 		align-items: center;
 		gap: 30px;
 		margin: 0 auto;
+		width: 44px;
+		height: 44px;
 	}
 	.social-media-contact{
 		margin-top: 16px;
