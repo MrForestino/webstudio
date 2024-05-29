@@ -49,7 +49,26 @@
 			<section class="hero">
 				<div class="container flex-column">
 						<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-						<button class="hero-button ">Замовити послугу</button>
+						<button class="hero-button" data-modal-open>Замовити послугу</button>
+				</div>
+				<div class="backdrop backdrop-hidden" data-modal >
+					<div class="modal">
+						<button class="modal-btn" data-modal-close></button>
+						<p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+						<form class="modal-form" method="get">
+							<div class="name-container"><label class="name-text">Ім'я</label><br> 
+								<input class="name" type="text"/></div>
+							<div class="phone-num-container"><label class="phone-nam-text">Телефон</label><br> <input class="phone-num" type="tel"/></div>
+							<div class="email-container"><label class="email-text">Пошта</label><br><input class="email" type="email"/></div>
+							<div class="comment-container"><label class="comment-text">Комментар</label><br> <textarea class="comment" placeholder="Введіть текст"></textarea></div>
+							<div class="checkbox-container">
+								<input class="checkbox" type="checkbox">
+								<label class="checkbox-text">Погоджуюся з россилкою та приймаю</label>
+								<a class="umovy" href="./">Умови договору</a>
+							</div>
+							<button class="submit-form" type="send">Відправити</button>
+						</form>
+					</div>
 				</div>
 			</section>
 			<section class="keyaspects-section">
@@ -357,8 +376,16 @@
 							</a>
 						</div>
 					</div>
+					<div class="form">
+						<p class="footer-form-text">Підпишіться на розсилку</p>
+						<div class="formcontainer">
+							<input class="email-form" type="email" placeholder="E-mail"/>
+							<button class="subscribe" type="submit">Підписатися</button>
+						</div>
+					</div>
 			</div>
 		</footer>
 	</div>
+	<script src="./js/main.js"></script>
 </body>
 </html>
