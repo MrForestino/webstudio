@@ -272,6 +272,7 @@ input{
 	.nav-list-link{
 		color: var(--color-menu-nav);
 	}
+
 	.header-address-email:hover,
 	.header-address-tel:hover{
 		color: var(--color-logo-web);
@@ -308,6 +309,11 @@ input{
 		align-items: center;
 		gap: 10px;
 		fill: var(--color-adresses);
+
+		transition-property: color, fill ;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	
 	}
 	.ul-link-contacts:first-child{
