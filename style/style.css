@@ -94,6 +94,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
 }
 .form{
 
@@ -109,7 +110,7 @@
 	background: rgba(33, 150, 243, 0);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
-	margin: right 12px ;
+	margin: 0;
 }
 .footer-form-text{
 	font-weight: 700;
@@ -292,6 +293,9 @@ input{
 	}
 	.active-link{
 		color: var(--color-logo-web);
+	}
+	.active-link::after{
+		c
 	}
 	.nav{
 		display: flex;
@@ -504,12 +508,16 @@ input{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 30px;
+		gap: 10px;
 		margin: 0 auto;
-		width: 44px;
-		height: 44px;
 	}
 	.social-media-contact{
+		padding: 12px;
+		width: 44px;
+		height: 44px;
+		fill: var(--color-white);
+		background-color: var(--color-bg-svg);
+		border-radius: 100%;
 		margin-top: 16px;
 		fill: var(--color-svg);
 	}
@@ -519,7 +527,6 @@ input{
 		height: 44px;
 		fill: var(--color-white);
 		background-color: var(--color-active);
-		border-radius: 100%;
 	}
 	.team-list{
 		display: flex;
