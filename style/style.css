@@ -271,6 +271,7 @@ input{
 		color: var(--color-logo-studio);
 	}
 	.nav-list-link{
+		position: relative;
 		color: var(--color-menu-nav);
 	}
 
@@ -295,7 +296,14 @@ input{
 		color: var(--color-logo-web);
 	}
 	.active-link::after{
-		c
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		top: 44px;
+		border-radius: 15px;
+		background-color: var(--color-active);
 	}
 	.nav{
 		display: flex;
@@ -684,17 +692,6 @@ input{
 		background-color:  var(--color-active);
 		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 	}
-	/* .active-button{
-		font-family: var(--font-family-roboto);
-		font-size: 16px;
-		width: 125px;
-		height: 38px;
-		background-color:  var(--color-active);
-		color: var(--color-white);
-		border-radius: 4px;
-		margin:8px;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);;
-	} */
 	.portfolio-project{
 		display: flex;
 		justify-content: center;
@@ -733,11 +730,49 @@ input{
 	}
 	.project-item{
 		width: 370px;
+		
 	}
 	.project-item:hover{
 		box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-	background: #fff;
+		background: #fff;
 	}
 	.display-title{
 		display: none;
 	}
+	
+	.box3{
+		position:relative;
+		width: 370px;
+		height: 294px;
+		overflow: hidden;
+	}
+	.box3:hover .overlay{
+		transform: translateY(0);
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(33, 150, 243, 0.9);
+		transform:translateY(100%);
+		transition: transform 250ms ease-in-out;
+		padding: 63px 24px;
+		z-index: 1;
+	}
+	.overlay-text{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 156%;
+	letter-spacing: 0.03em;
+	color: var(--color-white);
+	}
+	.techno-kryak {
+    position: absolute; /* абсолютне позиціонування для накладання */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* зберігає розміри зображення всередині контейнера */
+    z-index: 0; /* забезпечує, що зображення буде під overlay */
+}
