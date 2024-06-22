@@ -51,6 +51,9 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	text-transform:none;
 	opacity: 1;
+	transform: scale(528px, 581px);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-hidden{
@@ -74,7 +77,6 @@
 
 	border-radius:4px;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
 }
 .modal-btn{
 	width: 30px;
