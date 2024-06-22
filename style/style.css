@@ -312,15 +312,12 @@ input{
 	.header-address-email:hover,
 	.header-address-tel:hover{
 		color: var(--color-logo-web);
-		/* text-decoration: underline; */
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
 	.nav-link-list{
 		display: flex;
-
-		/* padding-right: 344px ; */
-		/* display:flex; */
-		/* flex-direction: row;
-		justify-content: center; */
 	}
 	.nav-link-list-contacts{
 		display: flex;
@@ -328,21 +325,47 @@ input{
 	}
 	.active-link{
 		color: var(--color-logo-web);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
-	.active-link::after{
+	.nav-list-link:hover{
+		color: var(--color-logo-web);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
+	}
+	.active-link::after {
 		content: '';
 		display: block;
 		position: absolute;
-		width: 100%;
+		width: 0;
 		height: 4px;
 		top: 44px;
-		border-radius: 15px;
+		left: 0;
+
 		background-color: var(--color-active);
+		border-radius: 15px;
+		animation: pulse 2s infinite; 
+	}
+	@keyframes pulse {
+		0% {
+			width: 0;
+		}
+		50% {
+			width: 100%;
+		}
+		100% {
+			width: 0;
+		}
+	}
+	.active-link:hover::after {
+		width: 100%;
 	}
 	.nav{
 		display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    	justify-content: space-between; 
+    	align-items: center; 
 		margin-right: 318px; /*-------------------!!!!!!!!!!!!!!! 344*/
 	}
 	.ul-link:not(:last-child){
@@ -369,6 +392,9 @@ input{
 	.ul-link-contacts:hover .header-address-email,.header-address-tel:hover{
 		color: var(--color-active);
 		fill: var(--color-logo-web);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
 	.address-item{
 		color: var(--color-white);
@@ -569,6 +595,9 @@ input{
 		height: 44px;
 		fill: var(--color-white);
 		background-color: var(--color-active);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
 	.team-list{
 		display: flex;
@@ -604,6 +633,9 @@ input{
 		border: 1px solid var(--color-active);
 		padding: 16px 32px;
 		border-radius: 4px;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
 	.footer{
 		background: var(--color-background-section-first);
@@ -650,19 +682,15 @@ input{
 	}
 	.join-social-media-contact:hover{
 		background-color: var(--color-active);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
 	.address-item:not(:first-child){
 		margin-top: 9px;
 	}
 	.item-address-email, .item-address-tel{
 		color: var(--color-adresses);
-	}
-	/* .item-address-email:hover, .item-address-tel:hover{
-		color: var(--color-logo-web);
-	} */
-	/* a[href^="/"]{
-		text-decoration: none;
-		color: #212121;
 	}
 	/* ----------------- ----------------- ----------------*/
 	
@@ -768,7 +796,10 @@ input{
 	}
 	.project-item:hover{
 		box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-		background: #fff;
+		background: var(--color-white);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-delay: 0 ;
 	}
 	.display-title{
 		display: none;
