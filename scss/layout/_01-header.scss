@@ -17,19 +17,19 @@
 //     color: map-get($colors, 'color-logo-web');
 // }
 .header-nav-link-span-studio,.logo-web{
-    font-family: map-get( $fonts, 'font-family-logo');
+    font-family: var( --font-family-logo);
     font-weight: 700;
     font-size: 26px;
-    color: map-get( $colors, 'color-logo-studio');
+    color:var(--color-logo-studio);
 }
 .nav-list-link{
     position: relative;
-    color: map-get( $colors, 'color-menu-nav');
+    color: var(--color-menu-nav);
 }
 
 .header-address-email:hover,
 .header-address-tel:hover{
-    color: map-get($colors, 'color-logo-web');
+    color: var(--color-logo-web);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
@@ -42,13 +42,13 @@
     align-items: center;
 }
 .active-link{
-    color: map-get($colors, 'color-logo-web');
+    color: var(--color-logo-web);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
 }
 .nav-list-link:hover{
-    color: map-get($colors, 'color-logo-web');
+    color: var(--color-logo-web);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
@@ -62,7 +62,7 @@
     top: 44px;
     left: 0;
 
-    background-color: map-get( $colors, 'color-active');
+    background-color: var(--color-active);
     border-radius: 15px;
     animation: pulse 2s infinite; 
 }
@@ -91,11 +91,11 @@
     margin-right:50px;
 }
 .header-address-email, .header-address-tel{
-    color: map-get( $colors,'color-adresses');
+    color: var(--color-adresses);
     display: flex;
     align-items: center;
     gap: 10px;
-    fill: map-get( $colors, 'color-adresses');
+    fill: var(--color-adresses);
 
     transition-property: color, fill ;
     transition-duration: 250ms;
@@ -108,12 +108,12 @@
     
 }
 .ul-link-contacts:hover .header-address-email,.header-address-tel:hover{
-    color: map-get( $colors, 'color-active');
-    fill: get-map($colors, 'color-logo-web');
+    color: var( --color-active);
+    fill: var(--color-logo-web);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
 }
 .address-item{
-    color: map-get( $colors,'color-white');
+    color: var(--color-white);
 }
