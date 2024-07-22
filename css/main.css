@@ -42,23 +42,6 @@ img {
   outline: 1px dotted tomato;
 }
 
-:root {
-  --color-logo-web:#2196F3;
-  --color-logo-studio:#000000;
-  --color-adresses:#757575;
-  --color-white:#ffffff;
-  --color-background-section-first:#2F303A;
-  --color-background-section-team:#F5F4FA;
-  --color-text-p:#212121;
-  --color-active:#188CE8;
-  --color-portfolio-cards: #EEEEEE;
-  --color-svg: #AFB1B8;
-  --color-bg-svg: rgba(255, 255, 255, 0.1);
-  --color-close-form: #E6E6E6;
-  --font-family-logo:"Raleway", sans-serif;
-  --font-family-roboto:"Roboto", sans-serif;
-}
-
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -71,6 +54,13 @@ img {
 .flex-element {
   display: flex;
   align-items: center;
+}
+
+.logo-web {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: #2196F3;
 }
 
 .header-nav-link-span-studio, .logo-web {

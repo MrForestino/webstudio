@@ -1,0 +1,3 @@
+@function getFont($name) {
+    @return map-get($fonts, $name);
+}

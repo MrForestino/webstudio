@@ -10,14 +10,14 @@
     align-items: center;
 }
 
-// .logo-web{
-//     font-family: map-get( $fonts, 'font-family-logo');
-//     font-weight: 700;
-//     font-size: 26px;
-//     color: map-get($colors, 'color-logo-web');
-// }
+.logo-web{
+    font-family: map-get( $fonts, 'font-family-logo');
+    font-weight: 700;
+    font-size: 26px;
+    color: map-get($colors, 'color-logo-web');
+}
 .header-nav-link-span-studio,.logo-web{
-    font-family: var( --font-family-logo);
+    font-family:map-get($font 'font-family-roboto');
     font-weight: 700;
     font-size: 26px;
     color:var(--color-logo-studio);
