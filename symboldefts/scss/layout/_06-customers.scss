@@ -1,0 +1,30 @@
+.regular-customers{
+    padding: 94px 0 94px;
+}
+.regular-customers-title{
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: map-get($colors,' color-text-p');
+    margin-bottom: 50px;
+}
+.regular-customers-list{
+    display: flex;
+    gap: 30px;
+}
+.regular-customers-link{
+    fill: map-get($colors, 'color-adresses');
+    border: 1px solid map-get($colors, 'color-svg');
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+.regular-customers-link:hover{
+    fill: map-get($colors,'color-active');
+    border: 1px solid map-get($colors,'color-active');
+    padding: 16px 32px;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0 ;
+}

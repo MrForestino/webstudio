@@ -1,0 +1,53 @@
+.team-title{
+    margin-bottom:50px;
+}
+.team-text{
+    margin-top:30px;
+    text-align: center;
+}
+.team-item:not(:last-child){
+    margin-right:30px;
+}
+.team-item{
+    background-color: map-get($colors, 'color-white');
+    border-radius: 9px;
+    padding-bottom:30px;
+    width: 270px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background:map-get($colors, 'color-white');
+}
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.social-media-contact{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    fill: var(--color-white);
+    background-color: var(--color-bg-svg);
+    border-radius: 100%;
+    margin-top: 16px;
+    fill: var(--color-svg);
+}
+.social-media-contact:hover{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    fill: var(--color-white);
+    background-color: var(--color-active);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0 ;
+}
+.team-list{
+    display: flex;
+}
+.team-section{
+    background: var(--color-background-section-team);
+padding-top:94px;
+padding-bottom: 94px;
+}

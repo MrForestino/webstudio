@@ -1,0 +1,55 @@
+.footer{
+    background: map-get($colors, ' color-background-section-first');
+    padding: 60px 0;
+}
+.footer-flex{
+    display: flex;
+    align-items: center;
+
+}
+.footer-logo-studio{
+    font-family: map-get($fonts, 'font-family-logo');
+    font-weight: 700;
+    font-size: 26px;
+    color:map-get($colors, 'color-white');
+    margin-bottom: 16px;
+}
+.address-container{
+    margin-right: 70px;
+}
+.address{
+    margin-top: 20px;
+    font-style: normal;
+}
+.join-in-text{
+    color:map-get($colors, 'color-white');
+    margin-bottom: 20px;
+}
+.join-social-media-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.join-social-media-contact{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    fill: map-get($colors,' color-white');
+    background-color: var(--color-bg-svg);
+    border-radius: 100%;
+}
+.join-social-media-contact:hover{
+    background-color: map-get($colors, 'color-active');
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0 ;
+}
+.address-item:not(:first-child){
+    margin-top: 9px;
+}
+.item-address-email, .item-address-tel{
+    color: map-get($colors, 'color-adresses');
+}
