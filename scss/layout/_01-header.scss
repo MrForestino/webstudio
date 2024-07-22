@@ -20,16 +20,16 @@
     font-family:map-get($font 'font-family-roboto');
     font-weight: 700;
     font-size: 26px;
-    color:var(--color-logo-studio);
+    color: map-get($colors, ' color-logo-studio');
 }
 .nav-list-link{
     position: relative;
-    color: var(--color-menu-nav);
+    color: map-get($colors, 'color-menu-nav');
 }
 
 .header-address-email:hover,
 .header-address-tel:hover{
-    color: var(--color-logo-web);
+    color: map-get($colors, 'color-logo-web');
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
@@ -42,13 +42,13 @@
     align-items: center;
 }
 .active-link{
-    color: var(--color-logo-web);
+    color: map-get($colors,  'color-logo-web');
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
 }
 .nav-list-link:hover{
-    color: var(--color-logo-web);
+    color: map-get($colors,  'color-logo-web');
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
@@ -62,7 +62,7 @@
     top: 44px;
     left: 0;
 
-    background-color: var(--color-active);
+    background-color: map-get($colors,  'color-active');
     border-radius: 15px;
     animation: pulse 2s infinite; 
 }
@@ -91,11 +91,11 @@
     margin-right:50px;
 }
 .header-address-email, .header-address-tel{
-    color: var(--color-adresses);
+    color: map-get($colors,  'color-adresses');
     display: flex;
     align-items: center;
     gap: 10px;
-    fill: var(--color-adresses);
+    fill: map-get($colors,  'color-adresses');
 
     transition-property: color, fill ;
     transition-duration: 250ms;
@@ -108,12 +108,12 @@
     
 }
 .ul-link-contacts:hover .header-address-email,.header-address-tel:hover{
-    color: var( --color-active);
-    fill: var(--color-logo-web);
+    color: map-get($colors,  'color-active');
+    fill: map-get($colors,  'color-logo-web');
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0 ;
 }
 .address-item{
-    color: var(--color-white);
+    color: map-get($colors,  'color-white');
 }
