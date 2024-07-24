@@ -6,7 +6,7 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--color-text-p);
+    color: map-get($colors, 'color-text-p');
     margin-bottom: 50px;
 }
 .regular-customers-list{
@@ -14,14 +14,14 @@
     gap: 30px;
 }
 .regular-customers-link{
-    fill: var(--color-adresses);
-    border: 1px solid var(--color-svg);
+    fill: map-get($colors, 'color-adresses');
+    border: 1px solid map-get($colors, 'color-svg');
     padding: 16px 32px;
     border-radius: 4px;
 }
 .regular-customers-link:hover{
-    fill: var(--color-active);
-    border: 1px solid var(--color-active);
+    fill: map-get($colors,'color-active');
+    border: 1px solid map-get($colors,'color-active');
     padding: 16px 32px;
     border-radius: 4px;
     transition-duration: 250ms;

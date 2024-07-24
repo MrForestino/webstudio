@@ -133,7 +133,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 156%;
 letter-spacing: 0.03em;
-color: var(--color-white);
+color: map-get($colors, 'color-white');
 }
 .techno-kryak {
 position: absolute; /* абсолютне позиціонування для накладання */

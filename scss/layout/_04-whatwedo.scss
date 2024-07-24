@@ -16,7 +16,7 @@
 .whatwedo-text{
     position: absolute;
     background-color:rgba(47, 48, 58, 0.8);
-    color: var(--color-white);
+    color: map-get($colors, 'color-white');
     bottom: 0;
     padding-top: 27px;
     width: 370px;
