@@ -57,16 +57,17 @@ img {
 }
 
 .logo-web {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: #2196F3;
 }
 
-.header-nav-link-span-studio, .logo-web {
-  font-family: "Roboto";
+.header-nav-link-span-studio {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 26px;
+  color: #000000;
 }
 
 .nav-list-link {

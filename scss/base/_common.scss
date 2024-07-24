@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 body{
-		font-family:map-get($fonts, 'font-family-roboto');
+		font-family: getFont('font-family-roboto');
 		font-size: 14px;
 		font-weight: 500;
 		letter-spacing: 0.02em;

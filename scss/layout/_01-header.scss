@@ -11,20 +11,20 @@
 }
 
 .logo-web{
-    font-family: map-get( $fonts, 'font-family-logo');
+    font-family: getFont('font-family-logo') , sans-serif;
     font-weight: 700;
     font-size: 26px;
-    color: map-get($colors, 'color-logo-web');
+    color: getColor('color-logo-web');
 }
-.header-nav-link-span-studio,.logo-web{
-    font-family:map-get($fonts, 'font-family-roboto');
+.header-nav-link-span-studio{
+    font-family: getFont('font-family-roboto') ,sans-serif;
     font-weight: 700;
     font-size: 26px;
-    color: map-get($colors, ' color-logo-studio');
+    color: getColor('color-logo-studio');
 }
 .nav-list-link{
     position: relative;
-    color: map-get($colors, 'color-menu-nav');
+    color: getColor('color-menu-nav');
 }
 
 .header-address-email:hover,
