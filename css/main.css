@@ -57,14 +57,14 @@ img {
 }
 
 .logo-web {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   color: #2196F3;
 }
 
-.header-nav-link-span-studio {
-  font-family: "Roboto", sans-serif;
+.header-nav-link-span-studio, .logo-web {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 26px;
   color: #000000;
@@ -184,7 +184,7 @@ img {
   background-color: var(--color-background-section-first);
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffffff;
+  color: var(--color-white);
   padding: 200px 0;
 }
 
@@ -376,19 +376,19 @@ img {
   padding: 12px;
   width: 44px;
   height: 44px;
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--color-white);
+  background-color: var(--color-bg-svg);
   border-radius: 100%;
   margin-top: 16px;
-  fill: #AFB1B8;
+  fill: var(--color-svg);
 }
 
 .social-media-contact:hover {
   padding: 12px;
   width: 44px;
   height: 44px;
-  fill: #ffffff;
-  background-color: #188CE8;
+  fill: var(--color-white);
+  background-color: var(--color-active);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -399,7 +399,7 @@ img {
 }
 
 .team-section {
-  background: #F5F4FA;
+  background: var(--color-background-section-team);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -413,7 +413,6 @@ img {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
   margin-bottom: 50px;
 }
 
@@ -440,7 +439,6 @@ img {
 }
 
 .footer {
-  background: #2F303A;
   padding: 60px 0;
 }
 
@@ -483,8 +481,7 @@ img {
   padding: 12px;
   width: 44px;
   height: 44px;
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-bg-svg);
   border-radius: 100%;
 }
 
@@ -509,8 +506,7 @@ img {
 }
 
 .portfolio-title {
-  font-family: var(--font-family-logo);
-  color: var(--color-text-p);
+  color: #212121;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -529,26 +525,26 @@ img {
 }
 
 .portfolio-item {
-  font-family: var(--font-family-roboto);
+  font-family: "Roboto";
   font-size: 16px;
   width: 73px;
   height: 38px;
-  background-color: var(--color-background-section-team);
-  color: var(--color-logo-studio);
+  background-color: #F5F4FA;
+  color: #000000;
   border-radius: 4px;
   margin: 8px;
   /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .button-all, .button-website, .button-appendices, .button-design, .button-marketing {
-  font-family: var(--font-family-roboto);
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--color-logo-studio);
-  background-color: var(--color-background-section-team);
+  color: #000000;
+  background-color: #F5F4FA;
   border-radius: 4px;
   border: none;
   padding: 6px 25px;
@@ -563,8 +559,8 @@ img {
 }
 
 .button-all:active, .button-website:active, .button-appendices:active, .button-design:active, .button-marketing:active {
-  color: var(--color-white);
-  background-color: var(--color-active);
+  color: #ffffff;
+  background-color: #188CE8;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -577,35 +573,35 @@ img {
 }
 
 .project-title {
-  font-family: var(--font-family-roboto);
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.06em;
-  color: var(--color-text-p);
+  color: #212121;
   margin-bottom: 4px;
 }
 
 .project-text {
-  font-family: var(--font-family-roboto);
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.03em;
-  color: var(--color-adresses);
+  color: #757575;
 }
 
 .project-box {
   padding: 20px 24px;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: var(--color-portfolio-cards);
+  border-right-color: #EEEEEE;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: var(--color-portfolio-cards);
+  border-left-color: #EEEEEE;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--color-portfolio-cards);
+  border-bottom-color: #EEEEEE;
 }
 
 .project-item {
@@ -614,7 +610,7 @@ img {
 
 .project-item:hover {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background: var(--color-white);
+  background: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -910,6 +906,28 @@ textarea {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
+  width: 425px;
+}
+
+.checkbox:focus {
+  border-color: var(--color-portfolio-cards);
+}
+
+.checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-color: var(--color-text-p);
+}
+
+input {
+  width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-close-form);
+  border-radius: 4px;
+}/*# sourceMappingURL=main.css.map */letter-spacing: 0.03em;
   width: 425px;
 }
 
