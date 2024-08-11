@@ -13,45 +13,50 @@
 <body>
 	<div class="main-container">
 		<header class="header">
-			<div class="container flex-element">
-					<nav class="nav">
-					<a class="link-logo" href="/"><span class="logo-web">Web</span><span class="header-nav-link-span-studio">Studio</span></a>
-						<ul class="nav-link-list">
-							<li class="ul-link"><a class="nav-list-link active-link"  href="index.html" >Студія</a></li>
-							<div class="line-menu"></div>
-							<li class="ul-link"><a class="nav-list-link" href="portfolio.html">Портфоліо</a></li>
-							<li class="ul-link"><a class="nav-list-link" href="/" >Контакти</a></li>
-						</ul>
-					</nav>
-					<!-- <address class="header-address"> -->
-						<ul class="nav-link-list-contacts">
-							<li class="ul-link-contacts">
-								<a href="mailto:info@devstudio.com" class="header-address-email"> 
-									<svg width="16px" height="12px">
-										<use href="./symboldefts/symboldefts.svg#email">
-										</use>
-									</svg>
-									info@devstudio.com
-								</a>
-							</li>
-							<li class="ul-link-contacts">
-								<a href="tel:+380961111111" class="header-address-tel">
-									<svg width="10px" height="16px">
-										<use href="./symboldefts/symboldefts.svg#smartphone">
-										</use>
-									</svg>
-									+38 096 111 11 11
-								</a>
-							</li>
+			<div class="container header__container--flex">
+				<nav class="header__nav">
+					<a class="header__link-logo" href="/">
+						<span class="header__logo-web">Web</span>
+						<span class="header__logo-studio">Studio</span>
+					</a>
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link header__nav-link--active" href="index.html">Студія</a>
+						</li>
+						<div class="header__line-menu"></div>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="portfolio.html">Портфоліо</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="/">Контакти</a>
+						</li>
 					</ul>
-					<!-- </address> -->
+				</nav>
+				<ul class="header__contact-list">
+					<li class="header__contact-item">
+						<a href="mailto:info@devstudio.com" class="header__contact-email">
+							<svg width="16px" height="12px">
+								<use href="./images/symboldefts.svg#email"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="header__contact-item">
+						<a href="tel:+380961111111" class="header__contact-tel">
+							<svg width="10px" height="16px">
+								<use href="./images/symboldefts.svg#smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main>
 			<section class="hero">
-				<div class="container flex-column">
-						<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-						<button class="hero-button" data-modal-open>Замовити послугу</button>
+				<div class="container hero__container--flex-column">
+						<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+						<button class="hero__button" data-modal-open>Замовити послугу</button>
 				</div>
 				<div class="backdrop backdrop-hidden" data-modal >
 					<div class="modal">
@@ -73,34 +78,34 @@
 					</div>
 				</div>
 			</section>
-			<section class="keyaspects-section">
+			<section class="keyaspects">
 				<div class="container ">
-					<h2 class="keyaspects-title display">Ключові Аспекти</h2>
-					<h2 class="keyaspects-title display-title">Ключові Аспекти</h2>
-					<ul class="keyaspects-list">
-						<li class="keyaspects-items">
+					<h2 class="keyaspects__title display">Ключові Аспекти</h2>
+					<h2 class="keyaspects__title display-title">Ключові Аспекти</h2>
+					<ul class="keyaspects__list">
+						<li class="keyaspects__items">
 							
-							<h3 class="keyaspects-h3-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="keyaspects-text">Ідейні міркування, і навіть початок повсякденної роботи з
+							<h3 class="keyaspects__item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+							<p class="keyaspects__item-text">Ідейні міркування, і навіть початок повсякденної роботи з
 								формування позиції</p>
 						</li>
-						<li class="keyaspects-items">
-							<h3 class="keyaspects-h3-title">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="keyaspects-text">
+						<li class="keyaspects__items">
+							<h3 class="keyaspects__item-title">ПУНКТУАЛЬНІСТЬ</h3>
+							<p class="keyaspects__item-text">
 								Так само консультація з широким активом значною мірою
 								зумовлює.
 							</p>
 						</li>
-						<li class="keyaspects-items">
-							<h3 class="keyaspects-h3-title">ПЛАНУВАННЯ</h3>
-							<p class="keyaspects-text">
+						<li class="keyaspects__items">
+							<h3 class="keyaspects__item-title">ПЛАНУВАННЯ</h3>
+							<p class="keyaspects__item-text">
 								Так само консультація з широким активом значною мірою
 								зумовлює.
 							</p>
 						</li>
-						<li class="keyaspects-items">
-							<h3 class="keyaspects-h3-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="keyaspects-text">
+						<li class="keyaspects__items">
+							<h3 class="keyaspects__item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+							<p class="keyaspects__item-text">
 								Значимість цих проблем настільки очевидна, що реалізація
 								планових завдань.
 							</p>
@@ -158,25 +163,25 @@
 							<div class="social-media-container">
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#instagram">
+										<use href="./images/symboldefts.svg#instagram">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#twitter">
+										<use href="./images/symboldefts.svg#twitter">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#facebook">
+										<use href="./images/symboldefts.svg#facebook">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#linkedin">
+										<use href="./images/symboldefts.svg#linkedin">
 										</use>
 									</svg>
 								</a>
@@ -194,25 +199,25 @@
 							<div class="social-media-container">
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#instagram">
+										<use href="./images/symboldefts.svg#instagram">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#twitter">
+										<use href="./images/symboldefts.svg#twitter">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#facebook">
+										<use href="./images/symboldefts.svg#facebook">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#linkedin">
+										<use href="./images/symboldefts.svg#linkedin">
 										</use>
 									</svg>
 								</a>
@@ -230,25 +235,25 @@
 							<div class="social-media-container">
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#instagram">
+										<use href="./images/symboldefts.svg#instagram">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#twitter">
+										<use href="./images/symboldefts.svg#twitter">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#facebook">
+										<use href="./images/symboldefts.svg#facebook">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#linkedin">
+										<use href="./images/symboldefts.svg#linkedin">
 										</use>
 									</svg>
 								</a>
@@ -266,25 +271,25 @@
 							<div class="social-media-container">
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#instagram">
+										<use href="./images/symboldefts.svg#instagram">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#twitter">
+										<use href="./images/symboldefts.svg#twitter">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#facebook">
+										<use href="./images/symboldefts.svg#facebook">
 										</use>
 									</svg>
 								</a>
 								<a class="social-media-contact" href="./">
 									<svg width="20px" height="20px">
-										<use href="./symboldefts/symboldefts.svg#linkedin">
+										<use href="./images/symboldefts.svg#linkedin">
 										</use>
 									</svg>
 								</a>
@@ -299,37 +304,37 @@
 					<div class="regular-customers-list">
 							<a class="regular-customers-link" href="./">
 								<svg width="106px" height="60">
-									<use href="./symboldefts/symboldefts.svg#ya_co">
+									<use href="./images/symboldefts.svg#ya_co">
 									</use>
 								</svg>
 							</a>
 							<a class="regular-customers-link" href="./">
 								<svg width="106px" height="60">
-									<use href="./symboldefts/symboldefts.svg#company-tagline-here">
+									<use href="./images/symboldefts.svg#company-tagline-here">
 									</use>
 								</svg>
 							</a>
 							<a class="regular-customers-link" href="./">
 								<svg width="106px" height="60">
-									<use href="./symboldefts/symboldefts.svg#company-2">
+									<use href="./images/symboldefts.svg#company-2">
 									</use>
 								</svg>
 							</a>
 							<a class="regular-customers-link" href="./">
 								<svg width="106px" height="60">
-									<use href="./symboldefts/symboldefts.svg#foster">
+									<use href="./images/symboldefts.svg#foster">
 									</use>
 								</svg>
 							</a>
 							<a class="regular-customers-link" href="./">
 								<svg width="106px" height="60">
-									<use href="./symboldefts/symboldefts.svg#brand">
+									<use href="./images/symboldefts.svg#brand">
 									</use>
 								</svg>
 							</a>
 							<a class="regular-customers-link" href="./">
 								<svg width="106px" height="60">
-									<use href="./symboldefts/symboldefts.svg#tagline-company">
+									<use href="./images/symboldefts.svg#tagline-company">
 									</use>
 								</svg>
 							</a>
@@ -338,53 +343,56 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container footer-flex">
-					<div class="address-container">
-						<a class="logo-link" href="/"><span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a>
-					<address class="address"> 
-						<ul>
-							<li class="address-item ">м. Київ, пр-т Лесі Українки, 26</li>
-							<li class="address-item"><a class="item-address-email" href="mailto:info@devstudio.com" > info@devstudio.com</a></li>
-							<li class="address-item"><a  class="item-address-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+			<div class="container footer__container--flex">
+				<div class="footer__address">
+					<a class="footer__logo-link" href="/">
+						<span class="header__logo-web">Web</span>
+						<span class="footer__logo-studio">Studio</span>
+					</a>
+					<address class="footer__address-content">
+						<ul class="footer__address-list">
+							<li class="footer__address-item">м. Київ, пр-т Лесі Українки, 26</li>
+							<li class="footer__address-item">
+								<a class="footer__address-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+							<li class="footer__address-item">
+								<a class="footer__address-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
 						</ul>
 					</address>
+				</div>
+				<div class="footer__join">
+					<p class="footer__join-text">ПРИЄДНУЙТЕСЬ</p>
+					<div class="footer__social-media">
+						<a class="footer__social-link" href="./">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/symboldefts.svg#instagram"></use>
+							</svg>
+						</a>
+						<a class="footer__social-link" href="./">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/symboldefts.svg#twitter"></use>
+							</svg>
+						</a>
+						<a class="footer__social-link" href="./">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/symboldefts.svg#facebook"></use>
+							</svg>
+						</a>
+						<a class="footer__social-link" href="./">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/symboldefts.svg#linkedin"></use>
+							</svg>
+						</a>
 					</div>
-					<div class="join-in">
-						<p class="join-in-text">ПРИЄДНУЙТЕСЬ</p>
-						<div class="join-social-media-container">
-							<a class="join-social-media-contact" href="./">
-								<svg width="20px" height="20px">
-									<use href="./symboldefts/symboldefts.svg#instagram">
-									</use>
-								</svg>
-							</a>
-							<a class="join-social-media-contact" href="./">
-								<svg width="20px" height="20px">
-									<use href="./symboldefts/symboldefts.svg#twitter">
-									</use>
-								</svg>
-							</a>
-							<a class="join-social-media-contact" href="./">
-								<svg width="20px" height="20px">
-									<use href="./symboldefts/symboldefts.svg#facebook">
-									</use>
-								</svg>
-							</a>
-							<a class="join-social-media-contact" href="./">
-								<svg width="20px" height="20px">
-									<use href="./symboldefts/symboldefts.svg#linkedin">
-									</use>
-								</svg>
-							</a>
-						</div>
+				</div>
+				<div class="footer__form">
+					<p class="footer__form-text">Підпишіться на розсилку</p>
+					<div class="footer__form-container">
+						<input class="footer__form-email" type="email" placeholder="E-mail" />
+						<button class="footer__form-submit" type="submit">Підписатися</button>
 					</div>
-					<div class="form">
-						<p class="footer-form-text">Підпишіться на розсилку</p>
-						<div class="formcontainer">
-							<input class="email-form" type="email" placeholder="E-mail"/>
-							<button class="subscribe" type="submit">Підписатися</button>
-						</div>
-					</div>
+				</div>
 			</div>
 		</footer>
 	</div>

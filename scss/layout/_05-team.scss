@@ -1,7 +1,13 @@
 .team-title{
+    font-family: getFont('font-family-logo') , sans-serif;
+    font-weight:700;
+    font-size: 36px;
     margin-bottom:50px;
 }
 .team-text{
+    font-family: getFont('font-family-logo') , sans-serif;
+    font-weight:400;
+    font-size: 16px;
     margin-top:30px;
     text-align: center;
 }
@@ -16,17 +22,30 @@
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     background: map-get($colors, 'color-white');
 }
+.team-position{
+    background-color: map-get($colors, 'color-white');
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: map-get($colors, 'color-text-p');
+    text-align: center;
+    margin-top:10px;
+}
 .social-media-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    // gap: 10px;
     margin: 0 auto;
 }
 .social-media-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px;
-    width: 44px;
-    height: 44px;
+    // width: 44px;
+    // height: 44px;
     fill: map-get($colors, 'color-white');
     background-color: map-get($colors, 'color-bg-svg');
     border-radius: 100%;
@@ -35,8 +54,8 @@
 }
 .social-media-contact:hover{
     padding: 12px;
-    width: 44px;
-    height: 44px;
+    // width: 44px;
+    // height: 44px;
     fill: map-get($colors, 'color-white');
     background-color: map-get($colors, 'color-active');
     transition-duration: 250ms;
