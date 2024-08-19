@@ -9,3 +9,29 @@
     padding: 0 15px;
     outline: 1px dotted tomato;
 }
+@media screen and (max-width:480px){
+    .main-container{
+        width: 320px;
+        margin: 0 auto;
+        outline: 1px dotted deepskyblue;
+    }
+    .container{
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+        outline: 1px dotted rgb(71, 255, 86);
+    }
+}
+@media screen and (max-width:320px){
+    .main-container{
+        width: 320px;
+        margin: 0 auto;
+        outline: 1px dotted deepskyblue;
+    }
+    .container{
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+        outline: 1px dotted rgb(71, 255, 86);
+    }
+}

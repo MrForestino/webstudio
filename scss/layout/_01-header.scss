@@ -115,4 +115,30 @@
       width: 0;
     }
   }
-  
+  @media screen and (max-width:320px){
+    .header{
+      padding-top: 16px;
+      padding-bottom: 16px;
+      &__nav-list, &__contact-list{
+        display: none;
+    }
+      &__link-logo{
+        display: flex;
+      }
+      &__logo-web {
+        font-family: getFont('font-family-logo'), sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: getColor('color-logo-web');
+        letter-spacing: 0.03em;
+      }
+    
+      &__logo-studio {
+        font-family: getFont('font-family-roboto'), sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        color: getColor('color-logo-studio');
+      }
+    }
+}

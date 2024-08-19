@@ -64,3 +64,16 @@
     
     }
 }
+@media screen and (max-width:320px){
+    .keyaspects{
+        &__list{
+            display: block;
+        }
+        &__image--container{
+            width: 320px;
+        }
+        &__item-title, &__item-text{
+            text-align: center;
+        }
+    }
+}

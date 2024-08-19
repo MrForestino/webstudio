@@ -28,3 +28,13 @@
         transition-delay: 0 ;
     }
 }
+@media screen and (max-width:320px){
+    .customers{
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}

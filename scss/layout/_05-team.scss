@@ -72,3 +72,14 @@
         display: flex;
     }
 }
+@media screen and (max-width:320px){
+    .team{
+        &__list{
+            display: flex;
+            flex-direction: column;
+        }
+        &__item{
+            margin: 25px;
+        }
+    }
+}

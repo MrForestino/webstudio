@@ -11,6 +11,7 @@
 
     .portfolio__buttons {
         @extend %FLXJSTFcntr;
+        flex-wrap: wrap;
         padding-bottom: 50px;
     }
 
@@ -151,4 +152,20 @@
 
 .display-title {
     display: none;
+}
+@media screen and (max-width:320px){
+    .portfolio{
+        &__project-item {
+            width: 320px;
+        }
+        &__image-container{
+            position: relative;
+            width: 320px;
+            height: 294px;
+        }
+        &__buttons {
+            margin-left: 20px;
+            padding-bottom: 50px;
+        }
+    }
 }
