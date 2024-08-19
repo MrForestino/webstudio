@@ -10,14 +10,12 @@
     }
 
     .portfolio__buttons {
-        display: flex;
-        justify-content: center;
+        @extend %FLXJSTFcntr;
         padding-bottom: 50px;
     }
 
     .portfoliio__list {
-        display: flex;
-        justify-content: center;
+        @extend %FLXJSTFcntr;
         padding-bottom: 16px;
         margin-bottom: 38px;
     }
@@ -65,8 +63,7 @@
 }
 
 .portfolio__projects {
-    display: flex;
-    justify-content: center;
+    @extend %FLXJSTFcntr;
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc((100% - 90px)/3);
@@ -137,6 +134,7 @@
             font-size: 18px;
             line-height: 156%;
             letter-spacing: 0.03em;
+            width: 322px;
             color: map-get($colors, 'color-white');
         }
     }

@@ -1,5 +1,9 @@
 @import "./base/reset";
+
 @import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/placeholder";
+
 @import "./components/containers";
 
 @import "./layout/global.scss";

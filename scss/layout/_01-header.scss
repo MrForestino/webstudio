@@ -1,151 +1,3 @@
-// header__container header__container--flex
-// header__nav
-// header__link-logo
-// header__logo-web
-// header__logo-studio
-// header__nav-list
-// header__nav-item
-// header__nav-link header__nav-link--active
-// header__line-menu
-// header__nav-item
-// header__nav-link
-// header__nav-item
-// header__nav-link
-// header__contact-list
-// header__contact-item
-// header__contact-email
-// header__contact-item
-// header__contact-tel
-
-// .header{
-//     padding-top: 24px;
-//     padding-bottom: 25px;
-// }
-// .header__link-logo{
-//     margin-right: 93px ;
-// }
-// .header__container--flex{
-//     display: flex;
-//     align-items: center;
-// }
-
-// .header__logo-web{
-//     font-family: getFont('font-family-logo') , sans-serif;
-//     font-weight: 700;
-//     font-size: 26px;
-//     color: getColor('color-logo-web');
-// }
-// .header__logo-studio{
-//     font-family: getFont('font-family-roboto') ,sans-serif;
-//     font-weight: 700;
-//     font-size: 26px;
-//     color: getColor('color-logo-studio');
-// }
-// .header__nav-link{
-//     display: flex;
-//     align-items: center;
-//     position: relative;
-//     font-family: getFont('font-family-roboto') ,sans-serif;
-//     font-weight: 500;
-//     font-size: 14px;
-//     color: getColor('color-text-p');
-// }
-
-// .header__contact-email:hover,
-// .header__contact-tel:hover{
-    
-//     color: map-get($colors, 'color-logo-web');
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0 ;
-// }
-// .header__nav-list{
-//     display: flex;
-// }
-// .header__contact-list{
-//     display: flex;
-//     align-items: center;
-//     font-family: getFont('font-family-roboto') ,sans-serif;
-//     font-weight: 500;
-//     font-size: 14px;
-// }
-// .header__nav-link--active{
-//     color: map-get($colors,  'color-logo-web');
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0 ;
-// }
-// .header__nav-link:hover{
-//     color: map-get($colors,  'color-logo-web');
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0 ;
-// }
-// .header__nav-link--active::after {
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     width: 0;
-//     height: 4px;
-//     top: 44px;
-//     left: 0;
-
-//     background-color: map-get($colors,  'color-active');
-//     border-radius: 15px;
-//     animation: pulse 2s infinite; 
-// }
-// @keyframes pulse {
-//     0% {
-//         width: 0;
-//     }
-//     50% {
-//         width: 100%;
-//     }
-//     100% {
-//         width: 0;
-//     }
-// }
-// .active-link:hover::after {
-//     width: 100%;
-// }
-// .header__nav{
-//     display: flex;
-//     justify-content: space-between; 
-//     align-items: center; 
-//     margin-right: 318px; /*-------------------!!!!!!!!!!!!!!! 344*/
-// }
-// .header__nav-item:not(:last-child){
-//     display: flex;
-//     margin-right:50px;
-// }
-// .header__contact-email, .header__contact-tel{
-//     color: map-get($colors,  'color-adresses');
-//     display: flex;
-//     align-items: center;
-//     gap: 10px;
-//     fill: map-get($colors,  'color-adresses');
-
-//     transition-property: color, fill ;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0 ;
-
-// }
-// .header__contact-item:first-child{
-//     margin-right: 30px;
-    
-// }
-// .header__contact-item:hover .header__contact-email,.header__contact-tel:hover{
-//     color: map-get($colors,  'color-active');
-//     fill: map-get($colors,  'color-logo-web');
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0 ;
-// }
-// .address-item{
-//     color: map-get($colors,  'color-white');
-// }
-
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -155,8 +7,7 @@
     }
   
     &__container--flex {
-      display: flex;
-      align-items: center;
+    @extend %FLXALGNcntr
     }
   
     &__logo-web {
@@ -174,9 +25,7 @@
     }
   
     &__nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include FLXAIcntrJCspcbtw;
       margin-right: 318px;
   
       &-list {
@@ -188,8 +37,7 @@
           }
   
           .header__nav-link {
-            display: flex;
-            align-items: center;
+            @extend %FLXALGNcntr;
             position: relative;
             font-family: getFont('font-family-roboto'), sans-serif;
             font-weight: 500;
@@ -227,8 +75,7 @@
     }
   
     &__contact-list {
-      display: flex;
-      align-items: center;
+      @extend %FLXALGNcntr;
       font-family: getFont('font-family-roboto'), sans-serif;
       font-weight: 500;
       font-size: 14px;

@@ -29,6 +29,16 @@ img {
   height: auto;
 }
 
+.footer__form-submit, .footer__container--flex, .header__contact-list, .header__nav-list .header__nav-item .header__nav-link, .header__container--flex {
+  display: flex;
+  align-items: center;
+}
+
+.modal__field--checkbox, .portfolio__projects, .portfolio .portfoliio__list, .portfolio .portfolio__buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .main-container {
   width: 1600px;
   margin: 0 auto;
@@ -56,10 +66,6 @@ body {
 .header__link-logo {
   margin-right: 93px;
 }
-.header__container--flex {
-  display: flex;
-  align-items: center;
-}
 .header__logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -85,8 +91,6 @@ body {
   margin-right: 50px;
 }
 .header__nav-list .header__nav-item .header__nav-link {
-  display: flex;
-  align-items: center;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -116,8 +120,6 @@ body {
   width: 100%;
 }
 .header__contact-list {
-  display: flex;
-  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -176,8 +178,8 @@ body {
 }
 .hero__container--flex-column {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .hero__title {
   width: 696px;
@@ -226,8 +228,8 @@ body {
 }
 .keyaspects__image--container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -357,14 +359,14 @@ body {
 }
 .team__social-media {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 .team__social-media-link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 12px;
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -419,10 +421,6 @@ body {
   background: #2F303A;
   padding: 60px 0;
 }
-.footer__container--flex {
-  display: flex;
-  align-items: center;
-}
 .footer__logo-studio {
   font-family: "Raleway";
   font-weight: 700;
@@ -443,15 +441,15 @@ body {
 }
 .footer__social-media {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin: 0 auto;
 }
 .footer__social-link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 12px;
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -473,7 +471,6 @@ body {
   color: #757575;
 }
 .footer__form-container {
-  display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,8 +502,6 @@ body {
   margin-bottom: 20px;
 }
 .footer__form-submit {
-  display: flex;
-  align-items: center;
   padding: 10px 28px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -534,13 +529,9 @@ body {
   text-align: center;
 }
 .portfolio .portfolio__buttons {
-  display: flex;
-  justify-content: center;
   padding-bottom: 50px;
 }
 .portfolio .portfoliio__list {
-  display: flex;
-  justify-content: center;
   padding-bottom: 16px;
   margin-bottom: 38px;
 }
@@ -583,8 +574,6 @@ body {
 }
 
 .portfolio__projects {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   flex-basis: calc((100% - 90px) / 3);
@@ -649,6 +638,7 @@ body {
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
+  width: 322px;
   color: #ffffff;
 }
 
@@ -783,8 +773,6 @@ body {
   margin-top: 30px;
 }
 .modal__field--checkbox {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
   font-size: 14px;
   line-height: 171%;

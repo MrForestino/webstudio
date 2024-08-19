@@ -43,16 +43,12 @@
         margin-top:10px;
     }
     &__social-media{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include FLXALGNcntrcntn;
         // gap: 10px;
         margin: 0 auto;
     }
     &__social-media-link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include FLXALGNcntrcntn;
         padding: 12px;
         // width: 44px;
         // height: 44px;
@@ -76,12 +72,3 @@
         display: flex;
     }
 }
-// &__item-text, &__text/*,.project-text*/{
-//     font-family: getFont('font-family-roboto') ,sans-serif;
-    
-//     font-weight: 400;
-//     line-height: 1.5;
-//     letter-spacing: 0.03em;
-//     color: map-get($colors, 'color-adresses');
-
-// }

@@ -17,9 +17,7 @@
         position: relative;
     }
     &__text{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include FLXALGNcntrcntn;
 
         font-family: getFont('font-family-roboto') ,sans-serif;
 

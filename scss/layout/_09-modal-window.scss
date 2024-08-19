@@ -132,8 +132,7 @@
 			margin-top: 30px;
 		}
 		&__field--checkbox{
-			display: flex;
-			justify-content: center;
+			@extend %FLXJSTFcntr;
 			margin-top: 20px;
 			font-size: 14px;
 			line-height: 171%;
