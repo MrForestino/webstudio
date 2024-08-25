@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "webstudio",
+			"path": "."
+		},
+		{
+			"name": ".git",
+			"path": "../../../Desktop/webstudio/.git"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "webstudio"
+	}
+}
