@@ -70,6 +70,7 @@
     }
     &__list{
         display: flex;
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width:320px){
@@ -80,6 +81,46 @@
         }
         &__item{
             margin: 25px;
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .team{
+        &__list{
+            display: flex;
+            flex-direction: column;
+        }
+        &__item{
+            margin: 25px;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .team{
+        &__item{
+            margin-left: 15px;
+            margin-bottom: 30px;
+        }
+        &__item:not(:last-child){
+            margin-right:0;
+        }
+        &__item:nth-child(1){
+            margin-right:15px;
+        }
+        &__item:nth-child(3){
+            margin-right:15px;
+        }
+        &__item{
+            background-color: map-get($colors, 'color-white');
+            border-radius: 9px;
+            padding-bottom:30px;
+            width: 354px;
+            height: 536px;
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+            background: map-get($colors, 'color-white');
+        }
+        &__photo{
+            width: 354px;
         }
     }
 }
