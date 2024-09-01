@@ -1,11 +1,13 @@
 .customers{
     padding: 94px 0 94px;
+    >.container{
+        padding: 0 15px;
+        @include media(desktop){
+            padding: 0;
+        }
+    }
     &__title{
-        font-weight: 700;
-        font-size: 36px;
-        letter-spacing: 0.03em;
-        text-align: center;
-        color: map-get($colors, 'color-text-p');
+        @include secTitle();
         margin-bottom: 50px;
     }
     &__list{

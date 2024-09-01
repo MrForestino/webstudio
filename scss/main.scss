@@ -3,10 +3,11 @@
 @import "./utils/variables";
 @import "./utils/mixin";
 @import "./utils/placeholder";
+@import "./utils/mixins";
 
 @import "./components/containers";
 
-@import "./layout/global.scss";
+
 @import "./layout/01-header";
 @import "./layout/02-hero";
 @import "./layout/03-keyaspects";

@@ -69,8 +69,10 @@
         transition-delay: 0 ;
     }
     &__list{
-        display: flex;
-        flex-wrap: wrap;
+        @include flex(col,tru,false);
+        gap:30px;
+        // display: flex;
+        // flex-wrap: wrap;
     }
 }
 @media screen and (max-width:320px){

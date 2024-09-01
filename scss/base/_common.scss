@@ -3,19 +3,16 @@
 	box-sizing: border-box;
 }
 body{
-		font-family: getFont('font-family-roboto');
-		font-size: 14px;
-		font-weight: 500;
-		letter-spacing: 0.02em;
-}	
-.main-container{
-		width: 1600px;
-		margin: 0 auto;
-		outline: 1px dotted deepskyblue;
+	font-family: getFont('font-family-roboto') , sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+		&.no-scroll {
+			overflow: hidden;
+		}
 }
 .container{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
     outline: 1px dotted tomato;
 }
