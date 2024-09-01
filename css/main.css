@@ -61,8 +61,24 @@ img {
   }
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 15px;
+}
+@media screen and (max-width: 780px) {
+  .header > .container {
+    padding: 26px 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header > .container {
+    padding: 24px 0 25px 0;
+  }
 }
 .header__burger-menu {
   display: none;
@@ -194,7 +210,7 @@ img {
     width: 30px;
     height: 20px;
     z-index: 3;
-    margin-left: 50px;
+    margin-left: 200px;
   }
   .header__burger-menu span {
     content: "";
@@ -206,6 +222,7 @@ img {
     top: 9px;
     z-index: 2;
     height: 3px;
+    border-radius: 15px;
     transition: all 0.3s ease 0s;
   }
   .header__burger-menu::before, .header__burger-menu::after {
@@ -215,6 +232,7 @@ img {
     width: 100%;
     height: 3px;
     transition: all 0.3s ease 0s;
+    border-radius: 15px;
   }
   .header__burger-menu::before {
     top: 0;
@@ -228,10 +246,12 @@ img {
   .header__burger-menu.active:before {
     transform: rotate(45deg);
     top: 8px;
+    border-radius: 15px;
   }
   .header__burger-menu.active:after {
     transform: rotate(-45deg);
     bottom: 9px;
+    border-radius: 15px;
   }
   .header__nav-list {
     display: flex;
@@ -574,6 +594,39 @@ img {
   color: #757575;
 }
 
+@media screen and (max-width: 480px) {
+  .keyaspects__image--container {
+    width: 100%;
+  }
+  .keyaspects__list {
+    display: block;
+    justify-content: center;
+  }
+  .keyaspects__item-text {
+    width: 650px;
+    margin-left: 15px;
+  }
+  .keyaspects__item-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .keyaspects__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    padding-bottom: 60px;
+  }
+  .keyaspects__items:not(:last-child) {
+    margin-right: 15px;
+  }
+  .keyaspects__image--container {
+    width: 354px;
+  }
+  .keyaspects__item-text {
+    width: 354px;
+  }
+}
 .whatwedo {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -714,6 +767,7 @@ img {
   .team__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .team__item {
     margin: 25px;
