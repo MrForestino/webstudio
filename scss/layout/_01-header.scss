@@ -9,7 +9,6 @@
       @include media(tablet) {
         padding: 26px 15px;
       }
-  
       @include media(desktop) {
         padding: 24px 0 25px 0;
       }
@@ -18,40 +17,32 @@
       display: none;
     }
     &__link-logo {
-      margin-right: 93px;
-    
+      // margin-right: 93px;
     }
-  
     &__container--flex {
     @extend %FLXALGNcntr
     }
-  
     &__logo-web {
       font-family: getFont('font-family-logo'), sans-serif;
       font-weight: 700;
       font-size: 26px;
       color: getColor('color-logo-web');
     }
-  
     &__logo-studio {
       font-family: getFont('font-family-roboto'), sans-serif;
       font-weight: 700;
       font-size: 26px;
       color: getColor('color-logo-studio');
     }
-  
     &__nav {
       @include FLXAIcntrJCspcbtw;
-      margin-right: 318px;
-  
+      // margin-right: 318px;
       &-list {
         display: flex;
-  
         .header__nav-item {
           &:not(:last-child) {
             margin-right: 50px;
           }
-  
           .header__nav-link {
             @extend %FLXALGNcntr;
             position: relative;
@@ -60,14 +51,11 @@
             font-size: 14px;
             color: getColor('color-text-p');
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
             &:hover {
               color: map-get($colors, 'color-logo-web');
             }
-  
             &--active {
               color: map-get($colors, 'color-logo-web');
-  
               &::after {
                 content: '';
                 display: block;
@@ -80,7 +68,6 @@
                 border-radius: 15px;
                 animation: pulse 2s infinite;
               }
-  
               &:hover::after {
                 width: 100%;
               }
@@ -107,7 +94,6 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       color: map-get($colors, 'color-logo-web');
-
     }
     &:first-child {
         margin-right: 30px;
@@ -131,14 +117,21 @@
       width: 0;
     }
   }
-  @media screen and (min-width:320px){
+  @media screen and (min-width:480px){
     .header{
+      &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0;
+      }
       &__nav-list, &__contact-list{
         display: none;
     }
 
       &__link-logo{
-        margin-left: 10px;
+        margin-left: 0;
+        margin-right: 0;
         display: flex;
       }
       &__logo-web {
@@ -148,7 +141,6 @@
         color: getColor('color-logo-web');
         letter-spacing: 0.03em;
       }
-    
       &__logo-studio {
         font-family: getFont('font-family-roboto'), sans-serif;
         font-weight: 700;
@@ -162,7 +154,6 @@
         width: 30px;
         height: 20px;
         z-index: 3;
-        margin-left: 200px;
       }
       &__burger-menu span{
         content: '';
@@ -175,7 +166,6 @@
           z-index: 2;
           height: 3px;
           border-radius: 15px;
-  
           transition: all 0.3s ease 0s;
       }
       &__burger-menu::before, &__burger-menu::after{
@@ -200,12 +190,12 @@
       &__burger-menu.active:before{
         transform: rotate(45deg);
         top: 8px;
-          border-radius: 15px;
+        border-radius: 15px;
       }
       &__burger-menu.active:after{
         transform: rotate(-45deg);
         bottom: 9px;
-          border-radius: 15px;
+        border-radius: 15px;
       }
       &__nav-list{
         display: flex;
@@ -234,47 +224,24 @@
         background-color: #ffffff;
         z-index: 1;
         transition: all 0.3s ease 0s;
-
-
       }
       &__nav-list{
         display: flex;
         flex-direction: column;
         align-items: center;
-
       }
       &__nav-list{
         font-size: 18px;
       }
     }
   }
-@media screen and (min-width:480px){
-  .header{
-
-    &__link-logo{
-      margin-left: 10px;
-      display: flex;
-    }
-    &__logo-web {
-      font-family: getFont('font-family-logo'), sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      color: getColor('color-logo-web');
-      letter-spacing: 0.03em;
-    }
-  
-    &__logo-studio {
-      font-family: getFont('font-family-roboto'), sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      letter-spacing: 0.03em;
-      color: getColor('color-logo-studio');
-    }
-  }
-}
 @media screen and (min-width: 768px) {
   .header {
     &__nav-list, &__contact-list {
+      display: flex;
+    }
+    &__link-logo{
+      margin-right: 93px;
       display: flex;
     }
     &__burger-menu {
@@ -307,6 +274,14 @@
   .header__contact-tel {
     &:first-child {
         margin-right: 0;
+    }
+  }
+}
+@media screen and (min-width:1200px){
+  .header{
+    &__contact-list {
+      display: flex;
+      margin-left: 50px;
     }
   }
 }
