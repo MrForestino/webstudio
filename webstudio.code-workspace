@@ -1,12 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "webstudio",
 			"path": "."
-		},
-		{
-			"name": ".git",
-			"path": "../../../Desktop/webstudio/.git"
 		}
 	],
 	"settings": {
