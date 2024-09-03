@@ -1,38 +1,42 @@
+
 .header {
 	width: 100%;
 	border-bottom: 1px solid #ececec;
-    > .container {
+  padding: 24px 0 25px;
+    // > .container {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   padding: 16px 15px;
+    //   @include media(tablet) {
+    //     padding: 26px 15px;
+    //   }
+    //   @include media(desktop) {
+    //     padding: 24px 0 25px 0;
+    //   }
+    // }
+    &__container--flex{
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 16px 15px;
-      @include media(tablet) {
-        padding: 26px 15px;
-      }
-      @include media(desktop) {
-        padding: 24px 0 25px 0;
-      }
     }
     &__burger-menu{
       display: none;
     }
-    &__link-logo {
-      // margin-right: 93px;
-    }
     &__container--flex {
     @extend %FLXALGNcntr
     }
-    &__logo-web {
-      font-family: getFont('font-family-logo'), sans-serif;
+    &__logo-web, &__logo-studio{
       font-weight: 700;
       font-size: 26px;
+    }
+    &__logo-web {
+      font-family: getFont('font-family-logo'), sans-serif;
       color: getColor('color-logo-web');
     }
     &__logo-studio {
       font-family: getFont('font-family-roboto'), sans-serif;
-      font-weight: 700;
-      font-size: 26px;
       color: getColor('color-logo-studio');
+      margin-right: 92px;
     }
     &__nav {
       @include FLXAIcntrJCspcbtw;
@@ -117,7 +121,20 @@
       width: 0;
     }
   }
-  @media screen and (min-width:480px){
+  @media screen and (min-width:768px){
+    .header{
+      &__burger-menu{
+        display: none;
+      }
+      &__contact-list{
+        display: block;
+      }
+      &__contact-email:first-child,&__contact-tel:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 767px){
     .header{
       &__nav {
         display: flex;
@@ -127,26 +144,14 @@
       }
       &__nav-list, &__contact-list{
         display: none;
-    }
-
-      &__link-logo{
-        margin-left: 0;
-        margin-right: 0;
-        display: flex;
       }
-      &__logo-web {
-        font-family: getFont('font-family-logo'), sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        color: getColor('color-logo-web');
-        letter-spacing: 0.03em;
+      &__logo-web  {
+        padding-left: 15px;
       }
-      &__logo-studio {
-        font-family: getFont('font-family-roboto'), sans-serif;
+      &__logo-studio, &__logo-web  {
         font-weight: 700;
         font-size: 24px;
         letter-spacing: 0.03em;
-        color: getColor('color-logo-studio');
       }
       &__burger-menu{
         display:block;
@@ -235,53 +240,3 @@
       }
     }
   }
-@media screen and (min-width: 768px) {
-  .header {
-    &__nav-list, &__contact-list {
-      display: flex;
-    }
-    &__link-logo{
-      margin-right: 93px;
-      display: flex;
-    }
-    &__burger-menu {
-      display: none;
-    }
-    &__nav-list{
-      display: flex;
-      flex-direction:row;
-      padding-top: 0;
-      align-items: center;
-      position:relative;
-      top: 0%;
-      left: 0;
-      width: 0;
-      height: 0;
-      background-color: #ffffff;
-      z-index: 1;
-      transition: all 0.3s ease 0s;
-    }
-    &__contact-list {
-      display: block;
-      margin-left: 50px;
-    }
-    &__contact-tel,&__contact-email {
-      margin-right: 0;
-    }
-    
-  }
-  .header__contact-email,
-  .header__contact-tel {
-    &:first-child {
-        margin-right: 0;
-    }
-  }
-}
-@media screen and (min-width:1200px){
-  .header{
-    &__contact-list {
-      display: flex;
-      margin-left: 50px;
-    }
-  }
-}

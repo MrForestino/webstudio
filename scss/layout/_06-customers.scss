@@ -13,6 +13,7 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
     &__link{
@@ -31,38 +32,19 @@
         transition-delay: 0 ;
     }
 }
-@media screen and (max-width:320px){
+@media screen and (min-width:768px){
     .customers{
-        &__list{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
+        &__link{
+            text-align: center;
+            width: 226px;
         }
     }
 }
 @media screen and (max-width:480px){
     .customers{
-        &__list{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
-    }
-}
-@media screen and (max-width:768px){
-    .customers{
-        &__list{
-            display: flex;
-            gap: 30px;
-        }
-        &__list{
-            justify-content: center;
-        }
-        &__icon{
+        &__link{
+            text-align: center;
             width: 226px;
-            height: 92px;
         }
     }
 }

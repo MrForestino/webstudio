@@ -1,4 +1,9 @@
 .footer{
+    &__container--flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     background: map-get($colors, 'color-background-section-first');
     padding: 60px 0;
 
@@ -21,6 +26,11 @@
         font-style: normal;
     }
     &__join-text{
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
         color: map-get($colors, 'color-white');
         margin-bottom: 20px;
     }
@@ -106,99 +116,44 @@
         border: none;
     }
 }
-@media screen and (max-width:320px){
+@media screen and (min-width:768px){
     .footer{
-        &__container--flex,&__form-container{
+        &__address {
+            margin-right: 165px;
+        }
+        &__form{
+            margin-top: 60px;
+        }
+        &__form-text{
+            text-align: center;
+        }
+        &__form-container{
             display: flex;
             flex-direction: column;
         }
-        &__address{
-            margin-right: 0;
-        }
-        &__join-text,&__address,&__form-text {
-            text-align: center;
-        }
-        &__join-text,&__form-text{
-            margin-top: 20px;
-        }
-        &__form{
-            margin: 0 auto;
-        }
-        &__form-email{
-            width: 300px;
-            height: 50px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: rgba(33, 150, 243, 0);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            margin: 0;
-            padding-left: 16px;
-            color: map-get($colors, 'color-svg');
-    
-        }
     }
 }
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px){
     .footer{
-        &__container--flex,&__form-container{
+        &__container--flex{
             display: flex;
             flex-direction: column;
-        }
-        &__address{
-            margin-right: 0;
-        }
-        &__join-text,&__address,&__form-text {
-            text-align: center;
-        }
-        &__join-text,&__form-text{
-            margin-top: 20px;
-        }
-        &__form{
-            margin: 0 auto;
-        }
-        &__form-email{
-            width: 300px;
-            height: 50px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: rgba(33, 150, 243, 0);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            margin: 0;
-            padding-left: 16px;
-            color: map-get($colors, 'color-svg');
-    
-        }
-    }
-}
-@media screen and (max-width:768px){
-    .footer{
-        &__container--flex,&__form-container{
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            gap: 60px;
         }
-        &__join-text,&__address,&__form-text {
-            text-align: center;
+        &__address {
+            margin-right: 0;
+          }
+        &__form {
+            margin-left: 0;
         }
-        &__join-text,&__form-text{
-            margin-top: 20px;
-        }
-        &__form{
+        &__form-container{
             display: flex;
             flex-direction: column;
-            margin-top: 102px;
         }
-        &__form-email{
-            width: 450px;
-            height: 50px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: rgba(33, 150, 243, 0);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            margin: 0;
-            padding-left: 16px;
-            color: map-get($colors, 'color-svg');
-    
+        &__form-text{
+            text-align: center;
         }
     }
-}
+  }
