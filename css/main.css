@@ -176,8 +176,10 @@ img {
   .header__contact-list {
     display: block;
   }
-  .header__contact-email:first-child, .header__contact-tel:first-child {
-    margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .header__contact-list {
+    display: flex;
   }
 }
 @media screen and (max-width: 767px) {
@@ -432,14 +434,10 @@ img {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
-  .keyaspects__image--container {
-    width: 354px;
-  }
-}
 .whatwedo {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
 }
 .whatwedo__title {
   font-family: "Raleway", sans-serif;
@@ -475,9 +473,9 @@ img {
   margin-right: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .whatwedo {
-    display: none;
+    display: flex;
   }
 }
 .team {
@@ -552,11 +550,6 @@ img {
   gap: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .team__item, .team__photo {
-    width: 354px;
-  }
-}
 .customers {
   padding: 94px 0 94px;
 }

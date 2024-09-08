@@ -121,16 +121,21 @@
       width: 0;
     }
   }
-  @media screen and (min-width:768px){
-    .header{
-      &__burger-menu{
+  @media screen and (min-width: 768px) {
+    .header {
+      &__burger-menu {
         display: none;
       }
-      &__contact-list{
+      &__contact-list {
         display: block;
       }
-      &__contact-email:first-child,&__contact-tel:first-child {
-        margin-right: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .header {
+      &__contact-list {
+        display: flex;
       }
     }
   }
@@ -239,4 +244,5 @@
         font-size: 18px;
       }
     }
+    
   }

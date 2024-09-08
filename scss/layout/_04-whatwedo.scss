@@ -1,6 +1,7 @@
 .whatwedo{
     padding-top: 94px;
     padding-bottom: 94px;
+    display: none;
 
     &__title{
         font-family: getFont('font-family-logo') , sans-serif;
@@ -38,8 +39,8 @@
         margin-right:30px;
     }
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:1200px){
     .whatwedo{
-        display: none;
+        display: flex;
     }
 }
