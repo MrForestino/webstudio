@@ -10,11 +10,22 @@
     }
 
     .portfolio__buttons {
-        @extend %FLXJSTFcntr;
+        // @extend %FLXJSTFcntr;
+        display: flex;
+        align-items: left;
         flex-wrap: wrap;
+        gap: 8px;
         padding-bottom: 50px;
-    }
 
+    }
+    @media screen and (min-width:768px){
+        .portfolio__buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+    }
     .portfoliio__list {
         @extend %FLXJSTFcntr;
         padding-bottom: 16px;
@@ -64,10 +75,9 @@
 }
 
 .portfolio__projects {
-    @extend %FLXJSTFcntr;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    flex-basis: calc((100% - 90px)/3);
 
     .portfolio__project-item {
         width: 370px;

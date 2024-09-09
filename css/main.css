@@ -34,7 +34,7 @@ img {
   align-items: center;
 }
 
-.modal__field--checkbox, .portfolio__projects, .portfolio .portfoliio__list, .portfolio .portfolio__buttons {
+.modal__field--checkbox, .portfolio .portfoliio__list {
   display: flex;
   justify-content: center;
 }
@@ -762,8 +762,19 @@ img {
   text-align: center;
 }
 .portfolio .portfolio__buttons {
+  display: flex;
+  align-items: left;
   flex-wrap: wrap;
+  gap: 8px;
   padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio__buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
 }
 .portfolio .portfoliio__list {
   padding-bottom: 16px;
@@ -808,9 +819,9 @@ img {
 }
 
 .portfolio__projects {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  flex-basis: calc((100% - 90px) / 3);
 }
 .portfolio__projects .portfolio__project-item {
   width: 370px;
