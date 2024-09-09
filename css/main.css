@@ -43,7 +43,6 @@ img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  outline: 2px dotted tomato;
 }
 
 @media (min-width: 1200px) {
@@ -188,6 +187,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-right: 0;
+    width: 100%;
   }
   .header__nav-list, .header__contact-list {
     display: none;
@@ -347,7 +347,7 @@ img {
   background-color: #188CE8;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero {
     padding: 118px;
   }
