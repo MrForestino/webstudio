@@ -195,51 +195,9 @@
 		border: 1px solid map-get($colors, 'color-close-form');
 		border-radius: 4px;
 	}
-// @media screen and (max-width:320px){
-// 	.modal {
-// 		width: 300px;
-// 		height: 600px;
-// 		&__form{
-// 			margin: 0 10px 0;
-// 		}
-// 		&__input--name,
-// 		&__input--phone,
-// 		&__input--email{
-// 			padding-left: 40px;
-// 		}
-// 		&__field--checkbox{
-// 			margin-top: 20px;
-// 			font-size: 10px;
-// 			line-height: 171%;
-// 			letter-spacing: 0em;
-// 			width: 320px;
-// 			justify-content: start;
-// 			align-items: center;
-// 		}
-// 		&__link--terms{
-// 			font-size: 10px;
-// 			text-decoration: underline;
-// 			font-weight: 400;
-// 		}
-// 	}
-// 	input{
-// 		width: 235px;
-// 		height: 40px;
-// 		margin-top: 4px;
-// 		margin-bottom: 5px;
-// 	}
-// 	textarea{
-// 		padding: 12px 16px;
-// 		width: 240px;
-// 		height: 120px;
-// 		border: 1px solid map-get($colors, 'color-close-form');
-// 		border-radius: 4px;
-// 		resize: none;
-// 	}
-// }
 @media screen and (min-width:768px){
 	.backdrop {
-		height: 70%;
+		height: 100%;
 	}
 	.modal {
 		position: absolute;
@@ -250,7 +208,7 @@
 		&__input--name,
 		&__input--phone,
 		&__input--email{
-			padding-left: 0;
+			padding-left: 40px;
 		}
 		&__field--checkbox {
 			font-size: 12px;
@@ -258,9 +216,36 @@
 		}
 	}
 	input {
-		width: 370px;
+		width: 340px;
 	}
 	textarea {
-		width: 370px;
+		width: 340px;
+	}
+}
+@media screen and (max-width:767px){
+	.modal {
+		&__text{
+			width: 370px;
+		}
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 450px;
+		height: 609px;
+		&__input--name,
+		&__input--phone,
+		&__input--email{
+			padding-left: 40px;
+		}
+		&__field--checkbox {
+			font-size: 12px;
+			width: 370px;
+		}
+	}
+	input {
+		width: 330px;
+	}
+	textarea {
+		width: 340px;
 	}
 }
